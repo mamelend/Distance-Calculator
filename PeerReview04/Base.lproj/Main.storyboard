@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the starting location" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="92O-MU-UpI">
+                                <rect key="frame" x="66" y="28" width="188.5" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ESA-VI-hD8">
+                                <rect key="frame" x="96" y="269" width="128" height="30"/>
+                                <state key="normal" title="Calculate Distance"/>
+                                <connections>
+                                    <action selector="calculateButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xYa-Tz-02r"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First destination" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2dR-0F-Mht">
+                                <rect key="frame" x="45" y="85" width="230" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Second destination" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bL2-zz-j9b">
+                                <rect key="frame" x="45" y="147" width="230" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Third destination" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ps6-Q3-8JX">
+                                <rect key="frame" x="45" y="210" width="230" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0YZ-Fp-YIe">
+                                <rect key="frame" x="45" y="123" width="230" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Lr-U3-d5m">
+                                <rect key="frame" x="45" y="185" width="230" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ga1-rv-ZVS">
+                                <rect key="frame" x="45" y="248" width="230" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hwS-PZ-gmr">
+                                <rect key="frame" x="41" y="331" width="239" height="29"/>
+                                <segments>
+                                    <segment title="Meters"/>
+                                    <segment title="Kilometers"/>
+                                    <segment title="Miles"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hwS-PZ-gmr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2RO-KZ-kEK"/>
+                            <constraint firstItem="Ps6-Q3-8JX" firstAttribute="centerX" secondItem="ESA-VI-hD8" secondAttribute="centerX" id="2tV-i4-e3Y"/>
+                            <constraint firstItem="Ps6-Q3-8JX" firstAttribute="leading" secondItem="2dR-0F-Mht" secondAttribute="leading" id="6vA-EJ-jsI"/>
+                            <constraint firstItem="Ps6-Q3-8JX" firstAttribute="leading" secondItem="bL2-zz-j9b" secondAttribute="leading" id="9QA-BP-2vB"/>
+                            <constraint firstItem="ESA-VI-hD8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Brd-98-q6p"/>
+                            <constraint firstItem="Ps6-Q3-8JX" firstAttribute="top" secondItem="0Lr-U3-d5m" secondAttribute="bottom" constant="4" id="Ccq-1N-mF8"/>
+                            <constraint firstItem="Ps6-Q3-8JX" firstAttribute="trailing" secondItem="2dR-0F-Mht" secondAttribute="trailing" id="FC9-ke-A7t"/>
+                            <constraint firstItem="0Lr-U3-d5m" firstAttribute="top" secondItem="bL2-zz-j9b" secondAttribute="bottom" constant="8" id="IMh-Nz-FVY"/>
+                            <constraint firstItem="Ps6-Q3-8JX" firstAttribute="leading" secondItem="Ga1-rv-ZVS" secondAttribute="leading" id="M8T-fH-v7X"/>
+                            <constraint firstItem="Ps6-Q3-8JX" firstAttribute="trailing" secondItem="0Lr-U3-d5m" secondAttribute="trailing" id="MF7-jd-ZEb"/>
+                            <constraint firstItem="Ps6-Q3-8JX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="210" id="RGr-8Q-aeg"/>
+                            <constraint firstItem="Ga1-rv-ZVS" firstAttribute="top" secondItem="Ps6-Q3-8JX" secondAttribute="bottom" constant="8" id="Tjc-df-15f"/>
+                            <constraint firstItem="ESA-VI-hD8" firstAttribute="top" secondItem="Ga1-rv-ZVS" secondAttribute="bottom" id="eQe-7c-1Ql"/>
+                            <constraint firstItem="bL2-zz-j9b" firstAttribute="top" secondItem="0YZ-Fp-YIe" secondAttribute="bottom" constant="3" id="ehi-Mc-9Ug"/>
+                            <constraint firstItem="Ps6-Q3-8JX" firstAttribute="trailing" secondItem="0YZ-Fp-YIe" secondAttribute="trailing" id="fuX-r4-7As"/>
+                            <constraint firstItem="0YZ-Fp-YIe" firstAttribute="top" secondItem="2dR-0F-Mht" secondAttribute="bottom" constant="8" id="gbY-67-Ros"/>
+                            <constraint firstItem="2dR-0F-Mht" firstAttribute="top" secondItem="92O-MU-UpI" secondAttribute="bottom" constant="27" id="hLa-3R-1YA"/>
+                            <constraint firstItem="92O-MU-UpI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iHb-Bz-h9H"/>
+                            <constraint firstItem="Ps6-Q3-8JX" firstAttribute="leading" secondItem="0YZ-Fp-YIe" secondAttribute="leading" id="jsv-U0-R2c"/>
+                            <constraint firstItem="Ps6-Q3-8JX" firstAttribute="trailing" secondItem="bL2-zz-j9b" secondAttribute="trailing" id="sfW-wq-ihh"/>
+                            <constraint firstItem="Ps6-Q3-8JX" firstAttribute="leading" secondItem="0Lr-U3-d5m" secondAttribute="leading" id="vZ6-o8-SB5"/>
+                            <constraint firstItem="hwS-PZ-gmr" firstAttribute="top" secondItem="ESA-VI-hD8" secondAttribute="bottom" constant="32" id="vfB-ZB-Eey"/>
+                            <constraint firstItem="Ps6-Q3-8JX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="29" id="w1d-Xv-nsD"/>
+                            <constraint firstItem="Ps6-Q3-8JX" firstAttribute="trailing" secondItem="Ga1-rv-ZVS" secondAttribute="trailing" id="ybI-1P-LcJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="calculateButton" destination="ESA-VI-hD8" id="iKU-ps-XBX"/>
+                        <outlet property="distanceA" destination="0YZ-Fp-YIe" id="ArL-pF-edI"/>
+                        <outlet property="distanceB" destination="0Lr-U3-d5m" id="ZPF-Pg-vPb"/>
+                        <outlet property="distanceC" destination="Ga1-rv-ZVS" id="Ynt-tS-FBi"/>
+                        <outlet property="endLocationA" destination="2dR-0F-Mht" id="Yra-Uz-2Le"/>
+                        <outlet property="endLocationB" destination="bL2-zz-j9b" id="ter-RS-Ycu"/>
+                        <outlet property="endLocationC" destination="Ps6-Q3-8JX" id="NTc-r2-06E"/>
+                        <outlet property="startLocation" destination="92O-MU-UpI" id="dK8-zP-n3z"/>
+                        <outlet property="unitController" destination="hwS-PZ-gmr" id="x6Q-Dr-OBP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="172" y="346"/>
+        </scene>
+    </scenes>
+</document>
