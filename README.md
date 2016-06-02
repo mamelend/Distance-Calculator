@@ -1,1 +1,2 @@
 # Distance-Calculator-Obj-C
+This project uses the 'DistanceGetter' cocoapod in order to return the distance between cities. The user will type in a starting location and up to three other cities and get the distance between them in meters, kilometers, and miles. I worked on using blocks in order to encapsulate functionality and reduce repetition, and also avoided making direct references to the original ViewController in the blocks in order to improve efficiency and decrease the possibility of memory leaks.
